@@ -1,0 +1,50 @@
+Day 7 – Wireshark Packet Investigation
+
+Objective
+
+Learn how to investigate captured packets using Wireshark by analyzing packet layers, applying advanced filters, and following network conversations.
+
+Topics Learned
+
+- Packet Layers
+- Frame
+- Ethernet II
+- IPv4
+- TCP
+- MAC Address
+- IP Address
+- TTL (Time To Live)
+- Sequence Numbers
+- Window Size
+- Display Filters
+- Follow TCP Stream
+- Wireshark Statistics
+
+Practical Work
+
+- Examined different packet layers in Wireshark
+- Compared MAC address with the output of `ip a`
+- Identified Source and Destination IP addresses
+- Analyzed the IPv4 header and TTL value
+- Explored TCP header fields
+- Used display filters:
+  - `ip.addr == YOUR_IP`
+  - `tcp.port == 443`
+  - `dns.qry.name == "google.com"`
+- Used **Follow TCP Stream** to view a complete conversation
+- Explored **Statistics → Conversations**
+- Explored **Statistics → Protocol Hierarchy**
+- Solved a basic SOC investigation scenario
+
+Key Takeaways
+
+- Packets are made up of multiple layers, each containing different information.
+- MAC addresses identify devices on a local network, while IP addresses identify devices across networks.
+- TTL prevents packets from looping forever.
+- TCP uses sequence numbers to keep data in the correct order.
+- Display filters make it easier to analyze specific traffic.
+- Wireshark helps SOC analysts investigate network activity and troubleshoot issues.
+
+Status
+
+✅ Completed
